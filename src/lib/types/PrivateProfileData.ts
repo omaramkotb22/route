@@ -4,3 +4,4 @@ export interface PrivateProfileData {
 	repoCount: number;
 	contributionsCount: number;
 }
+ 

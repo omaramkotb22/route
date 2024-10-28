@@ -38,7 +38,7 @@
 						> <span>Join the Community</span></Button
 					>
 				{:else}
-					<Button on:click={() => signIn('github')} class="flex items-center space-x-2"
+					<Button on:click={() => {signIn('github')}} class="flex items-center space-x-2"
 						><Github /> <span>Sign in with Github</span></Button
 					>
 					<Button

@@ -24,6 +24,7 @@ export const load: PageServerLoad = async ({ params }) => {
 			views: user.views + 1
 		}
 	});
+	await prisma.
 
 	const links = await prisma.link.findMany({
 		where: { userId: user.githubId },
@@ -47,7 +48,6 @@ export const load: PageServerLoad = async ({ params }) => {
 	const socials = await prisma.social.findMany({
 		where: { userId: user.githubId }
 	});
-
 	const userData = {
 		links,
 		skills,

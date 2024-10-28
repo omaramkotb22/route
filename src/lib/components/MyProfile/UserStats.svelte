@@ -2,7 +2,9 @@
 	import GitHub from 'lucide-svelte/icons/github';
 	import Users from 'lucide-svelte/icons/users';
 	import Folder from 'lucide-svelte/icons/folder';
+	import { ChartArea } from 'lucide-svelte';
 	import type { PrivateProfileData } from '$lib/types/PrivateProfileData';
+	import Analytics from '$lib/components/Shared/Analytics.svelte';
 	import StatsCard from '$lib/components/Shared/StatsCard.svelte';
 	import StatsCardSkeleton from '../Shared/StatsCardSkeleton.svelte';
 
@@ -31,6 +33,13 @@
 			title="GitHub Followers"
 			data={privateProfileData.followers.toString()}
 		/>
+		<Analytics 
+		icon={ChartArea}
+		title="Profile Views"
+		data={privateProfileData}
+		/>
+
+
 	{:else}
 		{#each { length: 4 } as _}
 			<StatsCardSkeleton />

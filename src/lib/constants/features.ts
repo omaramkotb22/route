@@ -3,6 +3,8 @@ import { Github } from 'lucide-svelte';
 import { ChartArea } from 'lucide-svelte';
 import { UserPen } from 'lucide-svelte';
 import { GitPullRequestArrow } from 'lucide-svelte';
+import { ChartSpline } from 'lucide-svelte';
+
 
 export const features = [
 	{
@@ -26,5 +28,10 @@ export const features = [
 		name: 'Open Source',
 		description: 'Join a thriving open-source community and help us make all software open-source.',
 		icon: GitPullRequestArrow
+	},
+	{
+		name: 'Analytics',
+		description: 'Track your profile views and get insights on your audience.',
+		icon: ChartSpline
 	}
 ];

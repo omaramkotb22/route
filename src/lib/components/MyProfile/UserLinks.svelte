@@ -15,7 +15,7 @@
 	const handleDrop = async () => {
 		dragDisabled = true;
 		await fetch('/profile/links/order', {
-			method: 'PATCH',
+			method: 'PATCH', 
 			body: JSON.stringify({ links }),
 			headers: {
 				'content-type': 'application/json'
