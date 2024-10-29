@@ -7,7 +7,6 @@
 	import UserLinks from '$lib/components/MyProfile/UserLinks.svelte';
 	import SkillsForm from '$lib/components/MyProfile/SkillsForm.svelte';
 	import UserSkills from '$lib/components/MyProfile/UserSkills.svelte';
-
 	import { getGithubData } from '$lib/utils/getGithubData';
 	import type { GithubData } from '$lib/types/GithubData';
 	import { onMount } from 'svelte';
@@ -18,7 +17,7 @@
 	import SocialsForm from '$lib/components/MyProfile/SocialsForm.svelte';
 	import UserSocials from '$lib/components/MyProfile/UserSocials.svelte';
 	import FormCardHeader from '$lib/components/MyProfile/FormCardHeader.svelte';
-
+	import { ChartArea } from 'lucide-svelte';
 	let githubData: GithubData | null = null;
 	let privateProfileData: PrivateProfileData | null = null;
 	export let data: PageData;
@@ -95,5 +94,6 @@
 				</Card.Content>
 			</Card.Root>
 		</div>
+
 	</main>
 </div>

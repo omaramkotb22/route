@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { Heart,Trash2 } from 'lucide-svelte';
-    import { Button } from '$lib/components/ui/button';
-    import { enhance } from '$app/forms';
-    import { confirmDelete } from '$lib/utils/confirmDelete';
+  import { Button } from '$lib/components/ui/button';
+  import { enhance } from '$app/forms';
+  import { confirmDelete } from '$lib/utils/confirmDelete';
 	import type { Hobby } from '@prisma/client'; 
 	export let hobbies: Hobby[];
 

@@ -3,13 +3,13 @@ import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ params }) => {
 	const username = params.username;
-
+	// user is the user being viewed
 	if (!username) {
 		throw new Error('Username is required');
 	}
 
 	const user = await prisma.user.findUnique({
-		where: { githubUsername: username }
+		where: { githubUsername: username } // find user by username
 	});
 
 	if (!user) {
@@ -17,14 +17,17 @@ export const load: PageServerLoad = async ({ params }) => {
 	}
 
 	//update view by one
-
 	await prisma.user.update({
 		where: { githubId: user.githubId },
 		data: {
 			views: user.views + 1
 		}
 	});
-	await prisma.
+
+	// get user data
+	// get viewer data 
+	// get time of view 
+	
 
 	const links = await prisma.link.findMany({
 		where: { userId: user.githubId },
