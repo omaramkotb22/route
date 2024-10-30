@@ -17,7 +17,6 @@
 	import SocialsForm from '$lib/components/MyProfile/SocialsForm.svelte';
 	import UserSocials from '$lib/components/MyProfile/UserSocials.svelte';
 	import FormCardHeader from '$lib/components/MyProfile/FormCardHeader.svelte';
-	import { ChartArea } from 'lucide-svelte';
 	let githubData: GithubData | null = null;
 	let privateProfileData: PrivateProfileData | null = null;
 	export let data: PageData;

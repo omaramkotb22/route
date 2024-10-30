@@ -2,6 +2,7 @@
     export let title;
     export let value;
     export let description;
+    export let icon;
 </script>
 
 <style>
@@ -27,6 +28,7 @@
 </style>
 
 <div class="card">
+    <div class="icon">{@html icon}</div>
     <div class="title">{title}</div>
     <div class="value">{value}</div>
     <div class="description">{description}</div>
